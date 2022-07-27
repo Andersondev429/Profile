@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="shortcut icon" href="./resources/img/navegadorIcon.png" type="image/x-icon">
+    <title>Home - Anderson Pinheiro</title>
+</head>
+<body>
+    <header class="header">
+        <div class="div-header">
+            <a class="nav-header" href="index.html">Home</a>
+            <a class="nav-header" href="formacao.html">Formação Acadêmica e Cursos</a>
+            <a class="nav-header" href="voluntariado.html">Voluntariado</a>
+            <a class="nav-header" href="projetos.html">Projetos</a>
+            <a class="nav-header" href="contato.html">Contato e Redes Sociais</a>
+        </div>
+    </header>
+    <section class="slideShow-conteiner">
+
+        <div class="slide fade">
+            <div class="numeroSlide">1/5</div>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEraAtBkC8&#x2F;view?embed">
+                </iframe>
+           </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="numeroSlide">2/5</div>
+            <div class="imgSlide" style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAErZwiVbTw&#x2F;view?embed">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="numeroSlide">3/5</div>
+            <div class="imgSlide" style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAErZ9apqjQ&#x2F;view?embed">
+                </iframe>
+           </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="numeroSlide">4/5</div>
+            <div class="imgSlide" style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAErZ9iKoJw&#x2F;view?embed">
+                </iframe>
+           </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="numeroSlide">5/5</div>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEraLu-vVY&#x2F;view?embed">
+                </iframe>
+            </div>
+        </div>
+
+        <a class="btnAnterior" onclick="mudarSlide(-1)">&lsaquo;</a>
+        <a class="btnProximo" onclick="mudarSlide(+1)">&rsaquo;</a>
+
+    </section>
+    <section style="text-align: center;">
+        <span class="indicador" onclick="slideAtual(1)"></span>
+        <span class="indicador" onclick="slideAtual(2)"></span>
+        <span class="indicador" onclick="slideAtual(3)"></span>
+        <span class="indicador" onclick="slideAtual(4)"></span>
+        <span class="indicador" onclick="slideAtual(5)"></span>
+    </section>
+
+    <div class="rodape">
+        <div class="rodape-music">
+            <audio class="play-music" id="myaudio" src="./resources/img/music.mp3" controls preload="auto" autoplay loop></audio>
+            <div class="buttons-voluntariado">
+                <a href="formacao.html" class="button-next">
+                    <button class="button-rodape">< Anterior </button>
+                </a>
+                <a href="projetos.html" class="button-before">
+                    <button class="button-rodape">Próxima ></button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="script-voluntariado.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,554 @@
+body{
+    background-color: #080808;
+    min-height: 100vh;
+}
+
+.header{
+    padding: 10px;
+    margin: 0 10%;
+    box-sizing: border-box;
+    background: #1B1B1B;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.div-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-header{
+    color: #75f70b;
+
+}
+
+.nav-header:hover{
+    font-size: 17px;
+    transition: 0.4s;
+    color: #75f70b;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(63, 142, 0, 0.5);
+}
+
+
+/*/------------------------------------*/
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-top: 10%;
+    align-items: center;
+}
+
+.name-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text-content{
+    width: 50%;
+}
+
+.img-content{
+    width: 30%;
+}
+
+.img-perfil{
+    border-radius: 15px 50px;
+}
+
+.button-content{
+    background: #3F8E00;
+    border: 1px solid #62BA1B;
+    box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
+    border-radius: 4px;
+    width: 40%;
+    color: white;
+    padding: 10px;
+}
+
+.button-content:hover{
+    background: rgba(63, 142, 0, 0.5);
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+
+/*/CSS FORMAÇÃO*/
+
+
+.principal-formacao{
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.titulo-formacao{
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.rodape-leitor{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.img-robo-leitor{
+    width: 55%;
+}
+
+.button-rodape{
+    background: #3F8E00;
+    border: 1px solid #62BA1B;
+    box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+    margin: 2px;
+}
+
+.button-rodape:hover{
+    background: rgba(63, 142, 0, 0.5);
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+/*CSS VOLUNTARIADO*/
+*{box-sizing: border-box;}
+
+.voluntariado-titulo{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Architects Daughter', cursive;
+    box-shadow: 0 0 1em rgb(116, 116, 236);
+}
+
+.slideShow-conteiner{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slide{
+    display: none;
+}
+
+.imgSlide{
+    vertical-align: middle;
+}
+
+.btnAnterior, .btnProximo{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 15px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.4s ease;
+    user-select: none;
+}
+
+.btnAnterior{
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.btnProximo{
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.btnAnterior:hover, .btnProximo:hover, .textoSlide:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.textoSlide{
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.numeroSlide{
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+}
+
+.indicador{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.ativo, .indicador:hover{
+    background-color: #777;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.3s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.3s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+.rodape-music{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*CSS PROJETOS*/
+.container {
+    background: #1d2e28;
+    margin: 64px;  
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px #0E1D2F;
+    color: white;
+    padding: 64px;
+}
+  
+.cabecalho{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+  
+.perfil{
+    display: flex;
+}
+  
+.perfil-foto{
+    border-radius: 460px;
+    max-height: 160px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo{
+    margin-left: 16px;
+}
+  
+.titulo h1{
+    font-weight: 700;
+    font-size: 36px;
+}
+  
+.titulo h3{
+    font-weight: 400;
+    font-size: 24px;
+}
+  
+.tema button{
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 8px 16px;
+    background: black;
+    border-radius: 100px;
+    color: white;
+}
+
+.tema button:hover{
+    cursor: pointer;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    background: #14452f;
+    margin-top: 32px;
+    padding: 32px;
+    box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+    border-radius: 20px;
+}
+  
+.projetos-titulo{
+    list-style: none;
+    font-weight: 700;
+    font-size: 36px;
+}
+  
+.projetos-item{
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 48px;
+}
+  
+.link-page{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.link-page:hover{
+    font-weight: bold;
+    color: white;
+}
+
+
+.dark{
+    background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%),
+}
+  
+.dark .container{
+    color: #F6F6F6;
+    background: linear-gradient(230.65deg, #03b964 27.49%, #93fa3e 83.19%);
+}
+  
+.dark .projetos{
+    color: #F6F6F6;
+    background: linear-gradient(230.65deg, #03b964 27.49%, #93fa3e 83.19%);
+}
+  
+.dark .tema button{
+    background: linear-gradient(230.65deg, #03b964 27.49%, #93fa3e 83.19%);
+    color: #FFFFFF;
+    border: 2px solid #F7F7F7;
+}
+
+.pages{
+    min-height: 700px;
+}
+
+
+/*CSS CONTATO*/
+
+
+.trabalho-interesse{
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+}
+
+.image-celular{
+    width: 30px;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-linkedin, .social-instagram, .social-github, .social-email{
+    width: 130px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.social-linkedin:hover, .social-instagram:hover, .social-github:hover, .social-email:hover{
+    transition: 0.4s;
+    color: #75f70b;
+    cursor: pointer;
+    box-shadow: 0px 15px 15px rgba(63, 142, 0, 0.5);
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.robo-ligando{
+    width: 10%;
+    padding-top: 100px;
+    min-width: 200px;
+}
+
+.button-rodape-contato{
+    background: #3F8E00;
+    border: 1px solid #62BA1B;
+    box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+    margin: 2px;
+    margin-top: 320px;
+    
+}
+
+.button-rodape-contato:hover{
+    background: rgba(63, 142, 0, 0.5);
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+@media (max-width: 760px) {
+    .div-header{
+        /*flex-direction: column;*/
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .nav-header:hover{
+        font-size: 14px;
+    }
+
+    .name-title{
+        font-size: 20px;
+    }
+    
+    .text-content{
+        font-size: 17px;
+    }
+
+    .titulo h1{
+        font-size: 26px;
+    }
+      
+    .titulo h3{
+        font-size: 18px;
+    }
+
+    .tema button{
+        font-size: 14px;
+
+
+    }
+      
+}
+
+@media (max-width: 810px) {
+    .div-header{
+        /*flex-direction: column;*/
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .nav-header:hover{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 586px) {
+    .cabecalho{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .perfil{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 501px) {
+    .div-header{
+        flex-direction: column;
+    }
+
+    .button-content{
+        margin-bottom: 30px;
+    }
+
+    .name-title{
+        font-size: 18px;
+    }
+    
+    .text-content{
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .rodape-contato{
+        display: flex;
+    }
+    
+}
+
+@media (max-width: 458px) {
+    .button-content{
+        width: 70%;
+    }
+
+    .name-title{
+        font-size: 15px;
+    }
+    
+    .text-content{
+        font-size: 12px;
+    }
+
+    .projetos{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 370px) {
+    .rodape-music{
+        flex-direction: column;
+    }
+
+    .link-page{
+        font-size: 14px;
+    }
+
+    .projetos{
+        padding: 5px;
+    }
+    
+}
+
+@media (max-width: 327px) {
+    .link-page{
+        font-size: 12px;
+    }
+
+    .redes-sociais{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .robo-ligando{
+        width: 10%;
+        padding-top: 100px;
+        min-width: 150px;
+    }
+    
+    
+}
+
+
+
+
